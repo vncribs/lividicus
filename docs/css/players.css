@@ -1,0 +1,112 @@
+#player div {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; /* Adicionando transição CSS */
+    pointer-events: stroke;
+}
+
+#player img{
+    width: 90%;
+    border-radius: 50%;
+    transform: translateX(5%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+#player div:hover {
+    transform: scale(1.05);
+}
+
+#player1 {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#player1 .arrow::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 30px solid black;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#player2 {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#player2 .arrow::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 30px solid black;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#player3 {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#player3 .arrow::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 30px solid black;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#player4 {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#player4 .arrow::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 30px solid black;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.player {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player:hover {
+    transform: scale(1.05);
+}
+
+.arrow::after{
+    pointer-events: none;
+}
